@@ -1,0 +1,66 @@
+/*
+#FDEBF7
+#FBCAFF
+#FFADF0
+#FC28FB
+#7A0BC0
+*/
+
+
+
+body{
+  /* background-color: red; */
+}
+
+.forum-container{
+  background-color: #FC28FB;
+  /* height: 1000px; */
+  color: #FBCAFF;
+  padding: 100px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forum-box{
+  width: 80%;
+  height: 100%;
+  /* background-color: #FBCAFF; */
+
+}
+.forum-box-title{
+  padding: 50px 0 0 25px;
+}
+.forum-box label{
+  color: #FC28FB;
+  font-size: 20px;
+}
+.form-group input{
+  margin: 0 50px 0 0 !important;
+}
+.forum-box-1{
+  background: #FBCAFF;
+  margin: 25px;
+  padding: 40px;
+  border-radius: 25px;
+  color: #7A0BC0;
+}
+
+.btn-post{
+  background-color: #FC28FB;
+
+  color: #7A0BC0;
+}
+.btn-post:hover{
+  background-color: #7A0BC0;
+  color: #FC28FB;
+}
+a{
+  color: #FC28FB;
+  font-size: 20px;
+}
+a:hover{
+  color: #7A0BC0;
+}
+input{
+  background-color: #FDEBF7 !important;
+}

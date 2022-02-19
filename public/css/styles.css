@@ -50,11 +50,13 @@ body{
 
 .home-container{
   height: 600px;
-  /* background-image: url("/images/home_1.png");
+  background-image: url("/images/home.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   background-color: #FC28FB;
+  /* position: relative;
+  top: 70px; */
 
   display: flex;
   align-items: center;
@@ -152,7 +154,7 @@ body{
 .about-box-left-img-div{
   width: 80%;
   height: 60%;
-  background-image: url("/images/home_3.png");
+  background-image: url("/images/about_1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,6 +195,9 @@ box-shadow: 4px 4px 4px rgba(68,68,68,0.2), -4px -4px 4px rgba(68,68,68,0.2);
 .features-box img{
   border-radius: 50%;
 
+}
+.features-box img{
+  opacity: 0.8;
 }
 .features-box p{
   font-size: 24px !important;

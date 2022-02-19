@@ -1,0 +1,45 @@
+.about-page-container{
+  background-color: #FC28FB;
+  /* height: 1000px; */
+  color: #FBCAFF;
+  padding: 120px 10px 100px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 100%;
+}
+.about-page-box{
+  width: 80%;
+  height: 100%;
+  /* background-color: red; */
+  color: #FBCAFF;
+  margin: 0 0 100px 0;
+
+}
+.about-page-title{
+  margin: 25px 0;
+}
+
+.about-page-content{
+  width: 100%;
+  height: 100%;
+  background-color: #FBCAFF;
+  color: #FC28FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+
+
+}
+.card{
+  background-color: #FC28FB;
+  margin: 25px;
+}
+.card-body{
+  border-radius: 25px !important;
+  background-color: #FC28FB;
+  color: #FBCAFF;
+
+}

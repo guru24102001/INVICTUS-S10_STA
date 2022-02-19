@@ -1,0 +1,28 @@
+<%- include('partials/header') -%>
+
+
+<div class="comments-container">
+  <div class="comments-box">
+    <div class="comments-title">
+      <h2>Comments</h2>
+
+    </div>
+    <% const comments = result.reviews; %>
+    <% let n = comments.length; %>
+    <% for(let i=0 ; i<n ; i++){ %>
+      <div class="comments-box-item">
+        <h4><%= comments[i]  %></h4>
+      </div>
+
+      <% } %>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+<%- include('partials/footer') -%>

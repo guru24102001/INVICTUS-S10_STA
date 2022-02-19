@@ -1,0 +1,31 @@
+.comments-container{
+  background-color: #FC28FB;
+  height: 100vh;
+  color: #FBCAFF;
+  padding: 100px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comments-box{
+  width: 80%;
+  height: 100%;
+  /* background-color: #FBCAFF; */
+  padding: 40px;
+
+
+}
+.comments-title{
+  padding: 0 0 0 10px;
+  color: #FBCAFF;
+}
+
+.comments-box-item{
+  background-color: #FBCAFF;
+  color: #7A0BC0;
+  margin: 10px;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+
+}

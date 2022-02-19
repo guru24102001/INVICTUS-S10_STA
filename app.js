@@ -18,6 +18,8 @@ mongoose.connect("mongodb://localhost:27017/InvictusDB", {
 });
 
 
+let id;
+
 // Mongoose Schema
 
 // const reviewSchema = new mongoose.Schema({
@@ -55,11 +57,29 @@ app.get('/', function(req, res) {
   res.render("index", {})
 });
 app.get('/about', function(req, res){
-  res.render('forum', {});
+  res.render('about', {});
 });
 app.get('/community', function(req, res){
   res.render('', {})
 });
+
+app.get('/comments/:id', function(req, res){
+  const comment_id = req.params.id;
+  Post.findById(comment_id, function(err, result){
+    if(!err){
+
+      // console.log(result.reviews);
+      res.render('comments', {result: result});
+
+
+    }
+  });
+
+});
+
+
+
+
 app.get('/forum', function(req, res){
 
   Post.find({}, function(err, result){
@@ -87,7 +107,7 @@ app.post('/forum', function(req, res){
     }
 
   });
-  res.redirect("/");
+  res.redirect("/forum");
 });
 
 
