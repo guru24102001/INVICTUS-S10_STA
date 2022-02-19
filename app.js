@@ -14,10 +14,20 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 mongoose.connect("mongodb://localhost:27017/InvictusDB", {
-  useNewUrlParser: true
+  useNewUrlParser: true,
 });
 
+
 // Mongoose Schema
+
+// const reviewSchema = new mongoose.Schema({
+//   reviews: {
+//     type: String,
+//     required: true
+//   }
+// });
+// const Review = mongoose.model("Review", reviewSchema);
+
 const postSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -26,26 +36,77 @@ const postSchema = new mongoose.Schema({
   content: {
     type: String,
     required: true
-  }
+  },
+  // reviews: [reviewSchema]
 
+  reviews: {
+        type: [String], default: []
+    }
 });
 
 const Post = mongoose.model("Post", postSchema);
 
 
 
+
+
+
 app.get('/', function(req, res) {
   res.render("index", {})
 });
-app.get('/forum', function(req, res){
+app.get('/about', function(req, res){
   res.render('forum', {});
 });
-app.get('/', function(req, res){
+app.get('/community', function(req, res){
   res.render('', {})
 });
-app.get('')
+app.get('/forum', function(req, res){
+
+  Post.find({}, function(err, result){
+    if(!err){
+      res.render('forum', {result:result});
 
 
+    }
+  })
+});
+
+
+
+app.post('/forum', function(req, res){
+  console.log(req.body);
+  Post.findById(req.body.post_id, function(err, result){
+    if(!err){
+      // console.log(result);
+
+      result.reviews.push(req.body.review);
+      result.save();
+    }
+    else{
+      console.log(err);
+    }
+
+  });
+  res.redirect("/");
+});
+
+
+app.get('/admin', function(req, res){
+  res.render('admin', {});
+})
+app.post('/admin', function(req, res){
+  // console.log(req.body);
+
+
+
+  const post1 = new Post({
+    title: req.body.title,
+    content: req.body.content
+  });
+  post1.save();
+  res.redirect("/");
+
+});
 
 let port = process.env.PORT;
 if (port == null || port == "") {
