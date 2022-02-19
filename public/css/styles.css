@@ -1,0 +1,232 @@
+/*
+#FDEBF7
+#FBCAFF
+#FFADF0
+#FC28FB
+*/
+
+body{
+  font-family: 'Merriweather', sans-serif;
+
+}
+
+/* Navbar section */
+.navbar-container{
+  background-color: #FBCAFF;
+  width: 100%;
+  position: fixed;
+
+
+}
+.navbar-box{
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FBCAFF;
+
+}
+.navbar{
+  background-color: #FBCAFF;
+
+}
+
+.navbar-container a{
+  color: #FC28FB;
+  font-size: 20px;
+}
+
+.navbar-brand{
+  color: #FC28FB !important;
+  font-size: 30px !important;
+}
+
+
+/* Home section */
+
+
+.home-container{
+  height: 600px;
+  /* background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #FC28FB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-box{
+  width: 80%;
+  /* background-color: green; */
+  height: 80%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-box-left{
+  flex:1;
+  height: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-box-right{
+  flex:1;
+  height: 100%;
+  /* background-color: red; */
+  color: #FDEBF7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  font-size: 30px;
+
+}
+.home-box-left-img-div{
+  width: 80%;
+  height: 80%;
+  background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+/* About section */
+.about-container{
+  height: 600px;
+  /* background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #FBCAFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-box{
+  width: 80%;
+  background-color: green;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box-left{
+  flex:1;
+  height: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-box-right{
+  flex:1;
+  height: 100%;
+  /* background-color: red; */
+  color: #FDEBF7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+  font-size: 20px;
+
+}
+.about-box-left-img-div{
+  width: 80%;
+  height: 60%;
+  background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+/* features section */
+
+.features-container{
+  height: 700px;
+  /* background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #FC28FB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-box{
+  width: 80%;
+  background-color: green;
+  height: 80%;
+}
+
+/* measures section */
+.measures-container{
+  height: 700px;
+  /* background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #FBCAFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.measures-box{
+  width: 80%;
+  background-color: green;
+  height: 80%;
+}
+
+/* testimonial sec */
+.testimonial-container{
+  height: 700px;
+  /* background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #FC28FB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-box{
+  width: 80%;
+  background-color: green;
+  height: 80%;
+}
+
+/* footer section */
+
+.footer-container{
+  height: 100px;
+  color: #FC28FB;
+  /* background-image: url("/images/home_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #FBCAFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-box{
+  width: 80%;
+  /* background-color: green; */
+
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
