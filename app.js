@@ -13,7 +13,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
+mongoose.connect("mongodb://localhost:27017/InvictusDB", {
+  useNewUrlParser: true
+});
 
+// Mongoose Schema
 const postSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -33,6 +37,13 @@ const Post = mongoose.model("Post", postSchema);
 app.get('/', function(req, res) {
   res.render("index", {})
 });
+app.get('/forum', function(req, res){
+  res.render('forum', {});
+});
+app.get('/', function(req, res){
+  res.render('', {})
+});
+app.get('')
 
 
 
